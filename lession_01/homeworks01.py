@@ -8,9 +8,9 @@ world = "world"
 if True:
 print(f"{hello} {world}!")
 
-# task 03  == Вcтавте пропущену змінну замість "_"
-for _ in "Hello world!":
-    print(letter)
+# task 03  == Вcтавте пропущену змінну у ф-цію print
+for letter in "Hello world!":
+    print()
 x = 0
 
 # task 04 == Зробіть так, щоб кількість бананів була

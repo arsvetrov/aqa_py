@@ -1,5 +1,5 @@
-# task 01 == Знайдіть та екрануйте всі символи одинарної дужки у тексті
-# task 02 == Розділіть змінну так, щоб вона займала декілька фізичних лінії
+# task 01 == Розділіть змінну так, щоб вона займала декілька фізичних лінії
+# task 02 == Знайдіть та екрануйте всі символи одинарної дужки у тексті
 alice_in_wonderland = '"Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I don't much care where ——" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'
 
 # task 03 == Виведіть змінну alice_in_wonderland на друк
@@ -39,10 +39,10 @@ alice_in_wonderland = '"Would you tell me, please, which way I ought to go from 
 
 # task 07
 """
-Знайди остачу діленя чисел:
-а) 8019 : 8     г) 7248 : 6
-б) 9907 : 9     д) 7128 : 5
-в) 2789 : 5     е) 19224 : 9
+Знайди остачу від діленя чисел:
+a) 8019 : 8     d) 7248 : 6
+b) 9907 : 9     e) 7128 : 5
+c) 2789 : 5     f) 19224 : 9
 """
 
 
