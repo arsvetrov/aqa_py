@@ -63,5 +63,5 @@ adwentures_of_tom_sawer_sentences = None
 
 
 # task 10
-""" Виведіть довжину останнього речення з adwentures_of_tom_sawer_sentences.
+""" Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
