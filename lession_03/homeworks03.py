@@ -1,4 +1,4 @@
-adwentures_of_tom_sawer = """
+adwentures_of_tom_sawer = """\
 Tom gave up the brush with reluctance in his .... face but alacrity
 in his heart. And while
 the late steamer
@@ -16,8 +16,8 @@ and when he played
 out, Johnny Miller bought
 in for a dead rat and a string to swing it with—and so on, and so on,
 hour after hour. And when the middle of the afternoon came, from being a
-poor poverty, stricken boy in the .... morning, Tom was literally rolling in wealth.
-"""
+poor poverty, stricken boy in the .... morning, Tom was literally
+rolling in wealth."""
 # task 01 ==
 """ Дані у строці adwentures_of_tom_sawer розбиті випадковим чином, через помилку.
 треба замінити кінець абзацу на пробіл .replace("\n", " ")"""
