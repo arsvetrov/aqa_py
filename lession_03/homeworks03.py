@@ -54,11 +54,12 @@ adwentures_of_tom_sawer_sentences = None
 
 # task 08
 """ Виведіть четверте речення з adwentures_of_tom_sawer_sentences.
+Перетворіть рядок у нижній регістр.
 """
 
 
 # task 09
-""" Виведіть п'яте реченя, випустивши кожен другий символ з adwentures_of_tom_sawer_sentences.
+""" Перевірте чи починається якесь речення з "By the time".
 """
 
 
