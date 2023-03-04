@@ -30,6 +30,7 @@ big_list.clear()
 # comprehensions and List Iteration
 small_list = [x**2 for x in range(5)]
 
+
 # Словники
 ## створення словників
 blank_dict =  {}
@@ -46,16 +47,69 @@ big_dict.items()
 big_dict.copy()
 big_dict.clear()
 big_dict.update({"key":"value"})
-big_dict.popitem("key")
 big_dict.get("key", "default")
-big_dict.pop("key", "default")
+big_dict.pop("key", "default")  #.popitem() -  видалення випадкового елемента
 
+# порівняння словників Dictionary Comparisons
+# Example: Word Counts
+text = ('this is sample text with several words '
+        'this is more sample text with some different words')
+# без колекцій
+# з колекціями
+# from collections import Counter
 
 # Сети (набори)
-
+my_blank_set = set()
 ## перетворення в набір
+numbers = list(range(4)) + list(range(5, 10))
+set(numbers)
 
 ## операції з наборами
+# порівняння
+# підмножина. Еквівалентом методу issubset() є оператор <=
+set_a = {1, 2, 3}
+set_b = {1, 2, 3, 4, 5}
+print(set_a <= set_b)
+# обєднання  with the '|' operator or with the set type’s 'union' method
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+union_set = set_a | set_b
+# перетин 'intersection' and with the '&' operator
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+intersection_set = set_a & set_b  # {3}
+# симетрична різниця
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+symmetric_difference_set = set_a ^ set_b  # {1, 2, 4, 5}
 
-# Tuples
 
+# кортежі Tuples
+student_tuple = ()
+
+# Елементи Tuple можуть бути будь-якого типу, включаючи числа, рядки, списки та інші Tuple. Наприклад:
+my_tuple = ("apple", 3.14, [1, 2, 3], (4, 5, 6))
+
+# Для доступу до елементів Tuple можна використовувати індексацію, яка починається з 0. Наприклад:
+my_tuple = ("apple", "banana", "cherry")
+print(my_tuple[1])  # "banana"
+
+# Інші корисні операції з Tuple:
+# Отримання довжини Tuple:
+my_tuple = (1, 2, 3)
+print(len(my_tuple))  # 3
+
+# Злиття двох Tuple:
+tuple1 = (1, 2, 3)
+tuple2 = ("apple", "banana", "cherry")
+tuple3 = tuple1 + tuple2
+print(tuple3)  # (1, 2, 3, "apple", "banana", "cherry")
+
+# Перевірка наявності елемента в Tuple:
+my_tuple = (1, 2, 3)
+print(1 in my_tuple)  # True
+print(4 in my_tuple)  # False
+
+# Повторення Tuple:
+my_tuple = ("apple", "banana", "cherry")
+print(my_tuple * 2)  # ("apple", "banana", "cherry", "apple", ...
