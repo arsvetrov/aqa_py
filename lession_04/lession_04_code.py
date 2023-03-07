@@ -58,6 +58,9 @@ text = ('this is sample text with several words '
 # з колекціями
 # from collections import Counter
 
+# Zipped key/value tuples form (ahead)
+zipped = dict(zip(['a', 'b', 'c'], [1, 2, 3]))
+
 # Сети (набори)
 my_blank_set = set()
 ## перетворення в набір
