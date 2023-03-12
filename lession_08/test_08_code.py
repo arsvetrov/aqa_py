@@ -1,6 +1,6 @@
 import unittest
 
-class HomeworksTesting(unittest.TestSuite):
+class HomeworksTesting(unittest.TestCase):
 
     def test_task01(self):
         pass
