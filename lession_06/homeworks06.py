@@ -1,76 +1,71 @@
+# task 1
+""" Задача - надрукувати табличку множення на задане число, але
+лише до максимального значення для добутку - 25.
+Код майже готовий, треба знайти помилки та випраавити\доповнити.
 """
-    Написати функцію, яка обчислює суму двох чисел.
-    Написати функцію, яка перевіряє, чи є задане число простим.
-    Написати функцію, яка розраховує середнє арифметичне список чисел.
-    Написати функцію, яка приймає рядок та повертає його у зворотному порядку.
-    Написати функцію, яка перевіряє, чи є заданий рядок паліндромом.
-    Написати функцію, яка приймає список і повертає його, відсортований в порядку зростання.
-    Написати функцію, яка знаходить найбільший спільний дільник двох чисел.
-    Написати функцію, яка приймає список чисел та повертає кількість від'ємних чисел у списку.
-    Написати функцію, яка приймає список рядків та повертає найдовший рядок у списку.
-    Написати функцію, яка приймає два рядки та повертає індекс першого входження другого рядка
-    у перший рядок, якщо другий рядок є підрядком першого рядка, та -1, якщо другий рядок
-    не є підрядком першого рядка.
+def multiplication_table(number):
+    # Initialize the appropriate variable
+    multiplier = 1
+
+    # Complete the while loop condition.
+    while multiplier <= number:
+        result = number * multiplier
+        # десь тут помила, а може не одна
+        if  result > "25":
+            # Enter the action to take if the result is greater than 25
+            pass
+        print(str(number) + "x" + str(multiplier) + "=" + str(result))
+
+        # Increment the appropriate variable
+        multi += 1
+
+multiplication_table(3)
+# Should print:
+# 3x1=3
+# 3x2=6
+# 3x3=9
+# 3x4=12
+# 3x5=15
+
+
+# task 2
+"""  Написати функцію, яка обчислює суму двох чисел.
 """
-# def multiplication_table(number):
-#     # Initialize the appropriate variable
-#     multiplier = 1
-
-#     # Complete the while loop condition.
-#     while multiplier <= number:
-#         result = number * multiplier
-#         if  result > 25 :
-#             # Enter the action to take if the result is greater than 25
-#             break
-#         print(str(number) + "x" + str(multiplier) + "=" + str(result))
-
-#         # Increment the appropriate variable
-#         multiplier += 1
 
 
-# multiplication_table(3)
-# # Should print:
-# # 3x1=3
-# # 3x2=6
-# # 3x3=9
-# # 3x4=12
-# # 3x5=15
+# task 3
+"""  Написати функцію, яка розрахує середнє арифметичне списку чисел.
+"""
 
-# multiplication_table(5)
+# task 4
+"""  Написати функцію, яка приймає рядок та повертає його у зворотному порядку.
+"""
 
+# task 5
+"""  Написати функцію, яка приймає список слів та повертає найдовше слово у списку.
+"""
 
-import os
-import csv
+# task 6
+"""  Написати функцію, яка приймає два рядки та повертає індекс першого входження другого рядка
+у перший рядок, якщо другий рядок є підрядком першого рядка, та -1, якщо другий рядок
+не є підрядком першого рядка."""
+def find_substring(str1, str2):
 
-# Create a file with data in it
-def create_file(filename):
-    with open(filename, "w") as file:
-        file.write("name,color,type")
-        file.write("carnation,pink,annual")
-        file.write("daffodil,yellow,perennial")
-        file.write("iris,blue,perennial")
-        file.write("poinsettia,red,perennial")
-        file.write("sunflower,yellow,annual")
+    return -1
 
-# Read the file contents and format the information about each row
-def contents_of_file(filename):
-    return_string = ""
+str1 = "Hello, world!"
+str2 = "world"
+print(find_substring(str1, str2)) # поверне 7
 
-    # Call the function to create the file
-    create_file(filename)
+str1 = "The quick brown fox jumps over the lazy dog"
+str2 = "cat"
+print(find_substring(str1, str2)) # поверне -1
 
-    # Open the file
-    with open(filename) as f:
-        # Read the rows of the file
-        rows = f.readlines()
-        # Process each row
-        for row in rows[1:]:
-            print(row)
-            a,b,c = row.split(",")
-            print(a,b,c)
-            # Format the return string for data rows only
-            return_string += "a {0} {1} is {2}\n".format(b,a,c)
-    return return_string
-
-#Call the function
-print(contents_of_file("flowers.csv"))
+# task 7
+# task 8
+# task 9
+# task 10
+"""  Оберіть будь-які 4 таски з попередніх домашніх робіт та
+перетворіть їх у 4 функції, що отримують значення та повертають результат.
+Обоязково документуйте функції та дайте зрозумілі імена змінним.
+"""
