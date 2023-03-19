@@ -3,6 +3,8 @@ car = 'bmw'
 car == 'bmw'
 car == 'audi'
 
+False # "", {}, [], (), 0
+
 # оператор if
 answer = 17
 if answer != 42:
