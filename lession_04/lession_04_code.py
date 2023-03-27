@@ -98,8 +98,11 @@ for i in big_dict:
 big_dict.keys()
 print(big_dict.values())
 print("*"*88)
-for k, v in big_dict.items():
-    print(k,":", v)
+new_dict = {}
+for key, value in small_dict.items():
+    new_dict[value] = key
+    #print(k,":", v)
+print(new_dict)
 print("*"*88)
 print(big_dict["user"]['second'])
 big_dict.copy()
