@@ -123,42 +123,70 @@ text = ('this is sample text with several words '
 # без колекцій
 # з колекціями
 # from collections import Counter
+from collections import Counter
+c = Counter(text)
+print(c.most_common(5))
+
+text_counter = {} # створили пустий словник
+for char in text:    # бере кожну літеру з text і вставляє в змінну char
+    if char in text_counter:  # якщо char є в словнику text_counter
+        text_counter[char] += 1  # збільшмим на один значення ключа char
+    else: # якщо char в словнику немає
+        text_counter[char] = 1   # встановимо значення ключа char =1
+print(text_counter)
 
 # Zipped key/value tuples form (ahead)
 zipped = dict(zip(['a', 'b', 'c'], [1, 2, 3]))
+print(zipped)
 
 # Сети (набори)
 my_blank_set = set()
 ## перетворення в набір
-numbers = list(range(4)) + list(range(5, 10))
-set(numbers)
+numbers = list(range(4)) + list(range(10))
+print(set(numbers))
+print(set(text))
+my_list = [1,2,4,1,4,5,2,7,8,1,3,4,5]
+print(set(my_list))
 
 ## операції з наборами
 # порівняння
 # підмножина. Еквівалентом методу issubset() є оператор <=
 set_a = {1, 2, 3}
-set_b = {1, 2, 3, 4, 5}
+set_b = {1, 2, 4, 5, 3,}
+print(set_a.issubset(set_b))
+print("B <= A", set_b <= set_a)
 print(set_a <= set_b)
 # обєднання  with the '|' operator or with the set type’s 'union' method
 set_a = {1, 2, 3}
 set_b = {3, 4, 5}
 union_set = set_a | set_b
+union_set = set_a.union(set_b)
+print(union_set)
+
 # перетин 'intersection' and with the '&' operator
 set_a = {1, 2, 3}
-set_b = {3, 4, 5}
+set_b = {3, 4, 5, 1}
 intersection_set = set_a & set_b  # {3}
+print(intersection_set)
+list_set = sorted(intersection_set)
+#list_set.sort()
+print(list_set)
+
 # симетрична різниця
 set_a = {1, 2, 3}
-set_b = {3, 4, 5}
-symmetric_difference_set = set_a ^ set_b  # {1, 2, 4, 5}
-
+set_b = {3, 4, 5, 1, 2}
+symmetric_difference_set = set_b ^ set_a  # {1, 2, 4, 5}
+print(symmetric_difference_set)
 
 # кортежі Tuples
 student_tuple = ()
 
 # Елементи Tuple можуть бути будь-якого типу, включаючи числа, рядки, списки та інші Tuple. Наприклад:
 my_tuple = ("apple", 3.14, [1, 2, 3], (4, 5, 6))
-
+my_tuple[2].insert(3, 4)
+my_tuple[2].pop()
+# my_tuple[1] += 1  # видасть помилку, оскільки флоат в таплі незмінний!!
+print(my_tuple)
 # Для доступу до елементів Tuple можна використовувати індексацію, яка починається з 0. Наприклад:
 my_tuple = ("apple", "banana", "cherry")
 print(my_tuple[1])  # "banana"
@@ -172,13 +200,13 @@ print(len(my_tuple))  # 3
 tuple1 = (1, 2, 3)
 tuple2 = ("apple", "banana", "cherry")
 tuple3 = tuple1 + tuple2
-print(tuple3)  # (1, 2, 3, "apple", "banana", "cherry")
+# print(tuple3)  # (1, 2, 3, "apple", "banana", "cherry")
 
 # Перевірка наявності елемента в Tuple:
 my_tuple = (1, 2, 3)
-print(1 in my_tuple)  # True
+# print(1 in my_tuple)  # True
 print(4 in my_tuple)  # False
 
 # Повторення Tuple:
 my_tuple = ("apple", "banana", "cherry")
-print(my_tuple * 2)  # ("apple", "banana", "cherry", "apple", ...
+# print(my_tuple * 2)  # ("apple", "banana", "cherry", "apple", ...
