@@ -120,6 +120,9 @@ def describe_pet(animal_type, pet_name):
 print(describe_pet("shinshila", "pyizhyk"))
 print(describe_pet("pyizhyk", "shinshila"))
 
+# def make_pizza(*toppings):
+
+
 #
 def comma(*args) -> int:
     return ",".join([str(a) for a in args])
