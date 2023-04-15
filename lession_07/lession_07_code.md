@@ -42,9 +42,13 @@ git push -u origin master
 
 **УВАГА !!!**
 ОБОВ'ЯЗКОВО приберіть галочку "Copy the `main` branch only"
+
 ![image](https://user-images.githubusercontent.com/10905223/232206733-4d13c518-ff14-4633-8e73-3bef0315dd77.png)
+
 Якщо ви все зробили вірно, то у вас буде напис `forked from alex-pancho/aqa_py` та три гілки:
+
 ![image](https://user-images.githubusercontent.com/10905223/232207281-33202a10-7038-4c9a-9839-8931c212e246.png)
+
 
 Далі ви виконуєте команду `git clone` для свого форку:
 ![image](https://user-images.githubusercontent.com/10905223/232208533-023437da-2745-4e42-b369-2e25b24dc439.png)
@@ -52,6 +56,7 @@ git push -u origin master
 Переходите у папку з кодом `cd aqa_py`
 
 Щоб побачити віддалені гіли виконайте команду `git branch -r`
+
 ![image](https://user-images.githubusercontent.com/10905223/232208710-5f5c830d-1319-497b-bd0b-959a63b6c7a7.png)
 
 Щоб переключитися на віддалену гілку after_lession виконайте команду `git checkout after_lession`
