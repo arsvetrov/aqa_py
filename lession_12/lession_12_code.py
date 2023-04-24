@@ -1,6 +1,7 @@
 from pathlib import Path
 import json
 import csv
+import xml.etree.ElementTree as ET
 
 # Бібліотека pathlib та її модуль Path
 
@@ -71,5 +72,15 @@ with open(csv_file, newline='\n') as csvfile:
     for row in spamreader:
         print(row)
 # xml
-
-
+my_xml = p.parent / "group.xml"
+with my_xml.open() as file:
+    xml_data = file.read()
+root = ET.fromstring(xml_data)
+number = 0
+v = root.findall(f".//group[number='{number}']")
+values = [ x.text for x in v ]
+for child in  v:
+    value = child.find('timingExbytes/micro')
+    if value is None:
+        raise ValueError("опис що чи чому значення нема")
+    print(value.text)
