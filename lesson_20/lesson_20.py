@@ -18,7 +18,8 @@ print(time.localtime())
 
 print("*")
 
-yant = time.strftime("Now year %Y %m day is %d time is: %H:%M", time.localtime())
+yant = time.strftime("Now year %Y %m day is %d time is: %H:%M",
+                     time.localtime())
 print(yant)
 
 print(time.strptime("Sep 20, 2022", '%b %d, %Y'))
@@ -27,11 +28,11 @@ print(time.strptime("13 12, 2022", '%d %m, %Y'))
 
 incoming_date = "Aug 24, 1991"
 dt_incoming_date = time.strptime(incoming_date, '%b %d, %Y')
-print(time.strftime("OUR INDEPENDANCY DAY IS %Y month %m day is %d time is: %H:%M", dt_incoming_date))
+print(time.strftime("OUR INDEPENDANCY DAY IS %Y month" +
+                    " %m day is %d time is: %H:%M", dt_incoming_date))
 
 print(time.time())
 time.sleep(0.5)
 print(time.time())
-print(time.timezone) # The offset in seconds of the local time zone (without DST) from UTC
-
-
+# The offset in seconds of the local time zone (without DST) from UTC
+print(time.timezone)

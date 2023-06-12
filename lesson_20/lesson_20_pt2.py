@@ -11,7 +11,7 @@ print(type(datetime.fromtimestamp(1686590971)))
 # print(type(nix_time_now)) ## ОБЄКТИ РІНОГО ТИПУ !!!!
 d = datetime.today()
 print(d)
-print(d.ctime() == time.ctime(time.time())) # TRUE
+print(d.ctime() == time.ctime(time.time()))  # TRUE
 print(d.isocalendar())
 print(d.isoformat())
 print(d.isoweekday())
