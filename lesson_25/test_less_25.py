@@ -1,4 +1,5 @@
-from lesson_25 import *
+from lesson_25 import get_python, search_field, input_to
+from lesson_25 import found_results, get_hillel_test
 import time
 
 
@@ -13,3 +14,4 @@ def test_search():
 
 def test_hillel():
     window = get_hillel_test()
+    assert window
