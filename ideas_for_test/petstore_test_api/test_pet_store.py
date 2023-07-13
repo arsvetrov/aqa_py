@@ -1,7 +1,9 @@
 from conftest import *
+import pytest
 
 
 # Test 4
+@pytest.mark.positive
 def test_get_user(create_user):
     r = User.get_user(s, "Name12312")
     r_json = json_validate(r)
@@ -13,6 +15,7 @@ def test_get_user(create_user):
 
 
 # Test 5
+@pytest.mark.positive
 def test_get_pet(create_pet):
     r = Pet.get_pet(s, create_pet)
     r_json = json_validate(r)

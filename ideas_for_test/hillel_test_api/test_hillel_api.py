@@ -2,8 +2,9 @@ from conftest import *
 
 
 # Test 1
+@pytest.mark.positive
 def test_get_settings(logged_user):
-    """Positive get settings"""
+    """Get user settings"""
 
     r = users.settings_get(s)
     r_json = after_processsing(r)
@@ -17,8 +18,9 @@ def test_get_settings(logged_user):
 
 
 # Test 2
+@pytest.mark.positive
 def test_get_cars(logged_user, new_cars):
-    """Positive get cars list"""
+    """get users cars list"""
 
     r = cars.cars_get(s)
     r_json = after_processsing(r)
@@ -31,8 +33,9 @@ def test_get_cars(logged_user, new_cars):
 
 
 # Test 3
+@pytest.mark.negative
 def test_signin(registered_user):
-    """Negative Login with incorrect password"""
+    """Login with incorrect password"""
 
     user_data_negative = {
         "email": "apepsii@test.com",
