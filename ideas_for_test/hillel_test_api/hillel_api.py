@@ -101,9 +101,8 @@ class cars():
         endpoint = f"/cars/{id_}"
         return s.put(base_api_url + endpoint, json=request_body)
 
-    def cars_id_delete(s: requests.session, request_body: dict):
-        id_ = request_body.get("id", 0)
-        endpoint = f"/cars/{id_}"
+    def cars_id_delete(s: requests.session, id: str):
+        endpoint = f"/cars/{id}"
         return s.delete(base_api_url + endpoint)
 
 
